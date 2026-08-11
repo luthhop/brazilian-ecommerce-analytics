@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.executed.ipynb
+.venv/
+venv/
+
+# Environment
+.env
+
+# Data files
+data/raw/*
+data/processed/*
+data/database/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/database/.gitkeep
+
+# Power BI local/cache files
+*.pbit
+*.pbix
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
