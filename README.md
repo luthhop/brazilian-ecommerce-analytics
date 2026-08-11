@@ -35,6 +35,8 @@ O dataset possui aproximadamente 100 mil pedidos realizados entre 2016 e 2018 em
 - SQLite
 - Matplotlib
 - Seaborn
+- Streamlit
+- Plotly
 - Git e GitHub
 
 ## Estrutura do projeto
@@ -48,6 +50,7 @@ O dataset possui aproximadamente 100 mil pedidos realizados entre 2016 e 2018 em
 +-- docs/                 # Planejamento, dicionario e conclusoes
 +-- notebooks/            # Notebooks de analise
 +-- reports/              # Materiais finais e imagens
++-- app/                  # Dashboard interativo em Streamlit
 +-- sql/                  # Consultas SQL
 +-- src/                  # Scripts reutilizaveis
 +-- README.md
@@ -64,6 +67,7 @@ O dataset possui aproximadamente 100 mil pedidos realizados entre 2016 e 2018 em
 6. Criacao de banco SQLite local.
 7. Consultas SQL para responder perguntas de negocio.
 8. Documentacao dos principais insights.
+9. Criacao de dashboard interativo em Streamlit.
 
 ## Notebooks
 
@@ -223,6 +227,30 @@ sql/business_questions.sql
 
 O notebook `04_sql_business_analysis.ipynb` executa essas consultas sobre o banco SQLite local.
 
+## Dashboard interativo
+
+O projeto tambem possui um dashboard em Streamlit:
+
+```text
+app/streamlit_app.py
+```
+
+Para executar:
+
+```powershell
+streamlit run app/streamlit_app.py
+```
+
+O dashboard inclui:
+
+- KPIs de pedidos, receita, ticket medio, nota media, taxa de atraso e tempo medio de entrega.
+- Filtros por periodo, status, estado e categoria.
+- Evolucao mensal de pedidos.
+- Top categorias por receita.
+- Top estados por receita.
+- Comparacao entre atraso de entrega e nota media.
+- Tabela detalhada para exploracao operacional.
+
 ## Documentacao auxiliar
 
 - `docs/project_plan.md`: plano do projeto.
@@ -231,8 +259,7 @@ O notebook `04_sql_business_analysis.ipynb` executa essas consultas sobre o banc
 
 ## Proximas etapas
 
-- Criar dashboard no Power BI.
-- Exportar graficos e prints para `reports/`.
+- Exportar prints do dashboard para `reports/`.
 - Criar resumo executivo final.
 - Preparar publicacao para LinkedIn.
 
