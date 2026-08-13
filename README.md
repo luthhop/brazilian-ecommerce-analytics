@@ -251,6 +251,20 @@ O dashboard inclui:
 - Comparacao entre atraso de entrega e nota media.
 - Tabela detalhada para exploracao operacional.
 
+### Dashboard preview
+
+Overview:
+
+![Dashboard overview](reports/dashboard_overview.png)
+
+Top categories and states:
+
+![Dashboard categories and states](reports/dashboard_categories_states.png)
+
+Operational drill-down and takeaways:
+
+![Dashboard takeaways](reports/dashboard_takeaways.png)
+
 ## Documentacao auxiliar
 
 - `docs/project_plan.md`: plano do projeto.
